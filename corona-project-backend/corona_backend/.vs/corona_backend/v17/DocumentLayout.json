@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Repositories\\GraphsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Repositories\\GraphsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Controllers\\GraphsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Controllers\\GraphsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Repositories\\IGraphsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Repositories\\IGraphsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\DailyCasesModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Models\\DailyCasesModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\SevenDaysCasesAverageModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Models\\SevenDaysCasesAverageModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\GraphsModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:corona_backend\\Models\\GraphsModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "corona_backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "corona_backend\\Properties\\launchSettings.json",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-20T17:06:55.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphsController.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Controllers\\GraphsController.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Controllers\\GraphsController.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Controllers\\GraphsController.cs",
+              "RelativeToolTip": "corona_backend\\Controllers\\GraphsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T17:05:19.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGraphsRepository.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Repositories\\IGraphsRepository.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Repositories\\IGraphsRepository.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Repositories\\IGraphsRepository.cs",
+              "RelativeToolTip": "corona_backend\\Repositories\\IGraphsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T17:00:15.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GraphsRepository.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Repositories\\GraphsRepository.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Repositories\\GraphsRepository.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Repositories\\GraphsRepository.cs",
+              "RelativeToolTip": "corona_backend\\Repositories\\GraphsRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T16:58:19.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DailyCasesModel.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\DailyCasesModel.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Models\\DailyCasesModel.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\DailyCasesModel.cs",
+              "RelativeToolTip": "corona_backend\\Models\\DailyCasesModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T16:43:34.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SevenDaysCasesAverageModel.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\SevenDaysCasesAverageModel.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Models\\SevenDaysCasesAverageModel.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\SevenDaysCasesAverageModel.cs",
+              "RelativeToolTip": "corona_backend\\Models\\SevenDaysCasesAverageModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T16:43:01.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GraphsModel.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\GraphsModel.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Models\\GraphsModel.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Models\\GraphsModel.cs",
+              "RelativeToolTip": "corona_backend\\Models\\GraphsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T16:42:26.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Program.cs",
+              "RelativeDocumentMoniker": "corona_backend\\Program.cs",
+              "ToolTip": "C:\\Talpiot\\Corona-project\\corona-project-backend\\corona_backend\\corona_backend\\Program.cs",
+              "RelativeToolTip": "corona_backend\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T16:31:18.401Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

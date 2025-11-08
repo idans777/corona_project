@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kv4ihYFysXXcmlB0XWP9G9VMvkgZJuhFo/mI+9lbi5s=",
+  "Source": "corona_backend",
+  "BasePath": "_content/corona_backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
