@@ -1,0 +1,59 @@
+.card-title
+{
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.card-main-data
+{
+    font-size: 1.4rem;
+}
+
+.info-icon
+{
+    margin-left: 10px;
+}
+
+.info-message-container
+{
+    position: relative;
+    display: inline-block;
+}
+
+.info-message-content
+{
+    font-weight: 100;
+    font-size: 0.8rem;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    color: #000;
+    width: 6rem;
+    box-shadow: 0 10px 20px 10px #00000029;
+    padding: 5px;
+}
+
+.info-icon:focus + .info-message-content,
+.info-icon:hover + .info-message-content
+{
+    visibility: visible;
+}
+
+.info-message-content:hover
+{
+    visibility: visible;
+}
+
+
+
+.card-data
+{
+    display: flex;
+}
+
+.card-data > :first-child
+{
+    margin-inline-end: 5px;
+}

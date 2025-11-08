@@ -1,0 +1,28 @@
+<div class="page-container" [ngClass]="isTranslateOn ? 'rtl' : 'ltr'">
+
+    <app-header (sectionSelected)="scrollToSection($event)"></app-header>
+    
+    <div class="inner-page">
+        <app-overview #overview></app-overview>
+        
+        <app-key-data #keyData></app-key-data>
+    
+        <app-general-morbidity-indicators #generalMorbidityIndicators></app-general-morbidity-indicators>
+    
+        <app-imported-cases #importedCases></app-imported-cases>
+    
+        <app-community-traffic-light-model #traffic></app-community-traffic-light-model>
+        
+        <app-child-cases #childCases></app-child-cases>
+        
+        <app-vaccination-effectiveness #vaccinationEffectiveness></app-vaccination-effectiveness>
+        
+        <app-deaths #deaths></app-deaths>
+        
+        <app-testing #testing></app-testing>
+                
+        <app-vaccination #vaccination></app-vaccination>
+    </div>
+
+</div>
+

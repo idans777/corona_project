@@ -1,0 +1,80 @@
+<div class="card" [ngClass]="cardNgClass">
+    <div class="title-and-options">
+        <div class="title">
+          {{title}}
+            <div class="info">
+                <div class="info-icon" tabindex="0">i</div>
+                <div class="info-message-content">
+                    ...
+                </div>
+            </div>
+        </div>
+        <div class="options">
+          <span (click)="toggleIsOptionOpen()" style="font-size: 20px; cursor: pointer;">&#8942;</span>
+            <div class="options-menu" *ngIf="isOptionsOpen">
+                <div class="option-share">
+                    <i class="fas fa-share-alt share-icon"></i>
+                    <div class="share-text">{{share}}</div>
+                </div>
+                <div class="option-download">
+                    <i class="fas fa-download download-icon"></i>
+                    <div class="download-text">{{download}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- the table -->
+    <div class="table-container">
+        <div class="dropdown-container">
+            <button (click)="toggleDropdown()">
+              {{ selectedItemsNames.length === 0 ? (filterNotSelected) : selectedItemsNames.length + (filterSelected) }} ⬇
+            </button>
+      
+            <div class="dropdown-list" *ngIf="showDropdown">
+              <label *ngFor="let item of allData">
+                <input type="checkbox"
+                       [checked]="isTempSelected(item.name)"
+                       (change)="toggleTempItemsSelection(item.name)" />
+                {{ item.name }}
+              </label>
+      
+              <div class="dropdown-actions">
+                <button (click)="confirmSelection()">{{ok}}</button>
+                <button (click)="cancelSelection()">{{cancel}}</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="colors" *ngIf="colors">
+            <div class="color-container" *ngFor="let color of colors">
+                <div class="square" [ngClass]="color"></div>
+                <div class="color-label">{{color}}</div>
+            </div>
+          </div>
+
+          <ng-content></ng-content>
+          
+          <!-- <table>
+            <thead>
+              <tr>
+                <th (click)="changeTableOrderCity()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CITY' | translate}}</th>
+                <th (click)="changeTableOrderColor()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.COLOR' | translate}}</th>
+                <th (click)="changeTableOrderNewCasesForEvery10000()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NEW_CASES' | translate}}</th>
+                <th (click)="changeTableOrderPrecentagePositive()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.POSITIVE' | translate}}</th>
+                <th (click)="changeTableOrderConfirmedChange()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CHANGE' | translate}}</th>
+                <th (click)="changeTableOrderActiveCases()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.ACTIVE' | translate}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let city of filteredCities">
+                <td>{{ city.name }}</td>
+                <td><div class="square" [ngClass]="city.color ?? 'black'"></div></td>
+                <td>{{ city.newCasesForEvery10000 ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                <td>{{ city.precentagePositive ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                <td>{{ city.confirmedChange ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                <td>{{ city.activeCases ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+              </tr>
+            </tbody>
+          </table> -->
+     </div>
+</div>

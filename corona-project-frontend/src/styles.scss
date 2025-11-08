@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-color: #ffffff;
+    --border-color: #000;
+    --hover-color: #b8b4b4;
+    --side-bar-color: #f3f3f3;
+    --table-head-color: gainsboro;
+    --chart-line-color: rgb(255, 125, 103);
+    --dark-mode-icon-color-left: #fff;
+    --dark-mode-icon-color-right: #233d4e;
+    --icon-border-color: #fff;
+  }
+  
+  .dark-theme {
+    --bg-color: #4b6170;
+    --text-color: #ffffff;
+    --card-color: #375264;
+    --border-color: #fff;
+    --hover-color: #233d4e;
+    --side-bar-color: #233d4e;
+    --table-head-color: #233d4e;
+    --chart-line-color: rgb(252, 197, 55);
+    --dark-mode-icon-color-left: #233d4e;
+    --dark-mode-icon-color-right: #fff;
+    --icon-border-color: #233d4e;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+
+html
+{
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+  

@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="title-and-options">
+      <div class="title">{{ title }}</div>
+      <div class="options">
+        <span (click)="toggleOptions()" style="font-size: 20px; cursor: pointer;">&#8942;</span>
+        <div class="options-menu" *ngIf="isOptionsOpen">
+          <div class="option-share">
+            <i class="fas fa-share-alt share-icon"></i>
+            <div class="share-text">{{share}}</div>
+          </div>
+          <div class="option-download">
+            <i class="fas fa-download download-icon"></i>
+            <div class="download-text">{{download}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <ng-container *ngIf="showFilter">
+        <ng-content></ng-content>
+    </ng-container>
+  
+    <div echarts [options]="graph" class="chart" style="height: 300px;"></div>
+</div>

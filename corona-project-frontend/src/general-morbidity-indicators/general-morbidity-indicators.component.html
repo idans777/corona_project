@@ -1,0 +1,103 @@
+<div class="general-morbidity-indicators-container">
+    <div class="general-morbidity-indicators-title">
+        {{'GENERAL_MORBIDITY_INDICATORS.TITLE' | translate}}
+    </div>
+    <!-- <div class="hospital-beds-occupancy card">
+        <div class="title-and-options">
+            <div class="title">
+              {{'GENERAL_MORBIDITY_INDICATORS.CARD.TITLE' | translate}}
+                <div class="info">
+                    <div class="info-icon" tabindex="0">i</div>
+                    <div class="info-message-content">
+                      {{'GENERAL_MORBIDITY_INDICATORS.CARD.INFO' | translate}}
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+              <span (click)="toggleIsOptionOpen()" style="font-size: 20px; cursor: pointer;">&#8942;</span>
+                <div class="options-menu" *ngIf="isOptionsOpen">
+                    <div class="option-share">
+                        <i class="fas fa-share-alt share-icon"></i>
+                        <div class="share-text">{{'GENERAL_MORBIDITY_INDICATORS.SHARE' | translate}}</div>
+                    </div>
+                    <div class="option-download">
+                        <i class="fas fa-download download-icon"></i>
+                        <div class="download-text">{{'GENERAL_MORBIDITY_INDICATORS.DOWNLOAD' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        the table
+         <div class="table-container">
+            <div class="dropdown-container">
+                <button (click)="toggleDropdown()">
+                  {{ selectedHospitalNames.length === 0 ? ('GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.FILTER_ALL_HOSPITALS' | translate) : selectedHospitalNames.length + ('GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.FILTER_SELECTED' | translate) }} ⬇
+                </button>
+          
+                <div class="dropdown-list" *ngIf="showDropdown">
+                  <label *ngFor="let hospital of allHospitals">
+                    <input type="checkbox"
+                           [checked]="isTempSelected(hospital.name)"
+                           (change)="toggleTempHospitalSelection(hospital.name)" />
+                    {{ hospital.name }}
+                  </label>
+          
+                  <div class="dropdown-actions">
+                    <button (click)="confirmSelection()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.OK' | translate}}</button>
+                    <button (click)="cancelSelection()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.CANCEL' | translate}}</button>
+                  </div>
+                </div>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th (click)="changeTableOrderHospital()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.HOSPITAL' | translate}}</th>
+                    <th (click)="changeTableOrderOverallOccupancy()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.OVERALL_OCCUPANCY' | translate}}</th>
+                    <th (click)="changeTableOrderInternalWardOccupancy()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.INTERNAL_OCCUPANCY' | translate}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let hospital of filteredHospitals">
+                    <td>{{ hospital.name }}</td>
+                    <td>{{ hospital.overallOccupancy ?? ('GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.NO_DATA' | translate) }}</td>
+                    <td>{{ hospital.internalWardOccupancy ?? ('GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.NO_DATA' | translate) }}</td>
+                  </tr>
+                </tbody>
+              </table>
+         </div>
+    </div> -->
+
+    <app-general-table-card class="card"
+    [title]="'GENERAL_MORBIDITY_INDICATORS.CARD.TITLE' | translate"
+    [info]="'GENERAL_MORBIDITY_INDICATORS.CARD.INFO' | translate"
+    [share]="'GENERAL_MORBIDITY_INDICATORS.SHARE' | translate"
+    [download]="'GENERAL_MORBIDITY_INDICATORS.DOWNLOAD' | translate"
+    [ok]="'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.OK' | translate"
+    [cancel]="'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.CANCEL' | translate"
+    [noData]="'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.NO_DATA' | translate"
+    [allData]="allHospitals"
+    [selectedItemsNames]="selectedHospitalNames"
+    [filteredItems]="filteredHospitals"
+    [tempSelection]="tempSelection"
+    [cardNgClass]="'imported'"
+    [filterNotSelected]="'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.FILTER_ALL_HOSPITALS' | translate"
+    [filterSelected]="'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.FILTER_SELECTED' | translate"
+    >
+    <table>
+      <thead>
+        <tr>
+          <th (click)="changeTableOrderHospital()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.HOSPITAL' | translate}}</th>
+          <th (click)="changeTableOrderOverallOccupancy()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.OVERALL_OCCUPANCY' | translate}}</th>
+          <th (click)="changeTableOrderInternalWardOccupancy()">{{'GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.INTERNAL_OCCUPANCY' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hospital of filteredHospitals">
+          <td>{{ hospital.name }}</td>
+          <td>{{ hospital.overallOccupancy ?? ('GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.NO_DATA' | translate) }}</td>
+          <td>{{ hospital.internalWardOccupancy ?? ('GENERAL_MORBIDITY_INDICATORS.CARD.TABLE.NO_DATA' | translate) }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </app-general-table-card>
+</div>

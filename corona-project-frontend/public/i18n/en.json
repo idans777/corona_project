@@ -1,0 +1,237 @@
+{
+    "HEADER": {
+        "UPPER_HEADER": {
+            "TITLE": "Ministry of Health's World of Data",
+            "LANGUAGE_HEB": "hebrew",
+            "LANGUAGE_EN": "english", 
+            "SIDE_BAR": {
+                "TITLE": "Data World",
+                "ITEM1": "War Casualties",
+                "ITEM2": "Medical Services in Israel",
+                "ITEM3": "HMO Insured Main",
+                "ITEM4": "Child Development Evaluation",
+                "ITEM5": "Beaches",
+                "ITEM6": "Child Growth and Nursing",
+                "ITEM7": "Healthcare Quality",
+                "ITEM8": "COVID-19",
+                "ITEM9": "About the dashboard",
+                "ITEM10": "Accessibility",
+                "ITEM11": "Terms of use"
+            }
+        },
+        
+        "DOWN_HEADER": {
+            "SUBJECT1": "Overview",
+            "SUBJECT2": "Key Data",
+            "SUBJECT3": "General Morbidity Indicators",
+            "SUBJECT4": "Imported Cases",
+            "SUBJECT5": "Community Traffic Light Model",
+            "SUBJECT6": "Child Cases and Hospitalizations",
+            "SUBJECT7": "Vaccination Effectiveness",
+            "SUBJECT8": "Deaths",
+            "SUBJECT9": "Testing",
+            "SUBJECT10": "Vaccination"
+        }
+    },
+
+
+    "OVERVIEW": {
+        "LINK1": "Data World",
+        "LINK2": "COVID-19",
+        "TITLE": "COVID-19",
+        "UPDATE_BOLD": "last update:",
+        "UPDATE": " 23/3/25, 04:15",
+        "SECOND_TITLE": "Overview",
+        "CARD1": {
+            "TITLE": "New Cases, yesterday",
+            "DATA1": "5",
+            "DATA2_BOLD": "0",
+            "DATA2": "since midnight",
+            "DATA3_BOLD": "4,860,284",
+            "DATA3": "total"
+        },
+
+        "CARD2": {
+            "TITLE": "Active Cases",
+            "INFO": "Number of active COVID-19 cases, true as of the last update. Active cases – Those who have tested positive for COVID-19, irrespective of the onset of symptoms, and not yet determined to have recovered or died. Number of hospitalized persons, including recovering patients who remain hospitalized due to complications following infection. ",
+            "DATA1": "383",
+            "DATA2_BOLD": "171",
+            "DATA2": "hospitalized" 
+        },
+
+        "CARD3": {
+            "TITLE": "Vaccinated",
+            "DATA1_BOLD": "6,725,679",
+            "DATA1": "1st dose",
+            "DATA2_BOLD": "6,155,823",
+            "DATA2": "2ad dose",
+            "DATA3_BOLD": "4,499,899",
+            "DATA3": "3rd dose",
+            "DATA4_BOLD": "848,341",
+            "DATA4": "4th dose",
+            "DATA5_BOLD": "407,549",
+            "DATA5": "Omnicron"
+        },
+
+        "CARD4": {
+            "TITLE": "Cumulative Deaths",
+            "INFO": "Cumulative deaths from COVID-19 since the start of the pandemic. Data pertaining to deaths is updated after death certificates confirming the cause of death have been checked, rendering possible changes in the number of deaths at a later stage.",
+            "DATA": "13,170"
+        },
+
+        "CARD5": {
+            "TITLE": "% Positives, yesterday",
+            "INFO": "Percentage of positive COVID-19 cases of all tested persons. Tests for the detection of the virus yesterday - the number infections for initial detection of the virus (excluding accompanying tests to determine recovery) in PCR or supervised antigen tests (since January 5, 2022), which were conducted and the results were obtained between 00:00 and 23:59 yesterday. ",
+            "DATA1": "3.97%",
+            "DATA2_BOLD": "126",
+            "DATA2": " tested yesterday",
+            "DATA3_BOLD": "140",
+            "DATA3": "total tested yesterday"
+        },
+
+        "SECOND_CARDS_TITLE": "Last 7 days",
+
+        "CARD6": {
+            "TITLE": "Confirmed Cases",
+            "DATA1": "77",
+            "DATA2_BOLD": "-13.5%",
+            "DATA2": "prior 7 days"
+        },
+
+        "CARD7": {
+            "TITLE": "Deaths",
+            "INFO": "The number of COVID-19 deaths in the last 7 days (not including the day of the update) and the percentage change compared to the previous 7 days ",
+            "DATA1": "0",
+            "DATA2_BOLD": "0%",
+            "DATA2": "prior 7 days"
+        },
+
+        "CARD8": {
+            "TITLE": "Tests",
+            "INFO": "Number of people tested for COVID-19 on a PCR or antigen test in the last 7 days (not counting day of update) and the percentage change compared to the previous 7 days. Data does not include those who were tested for the purpose of determining recovery. Positive cases - percentage of individuals who tested positive for COVID-19 among the number of tested persons over previous 7 days. ",
+            "DATA1": "4,854",
+            "DATA2_BOLD": "-11.7%",
+            "DATA2": "prior 7 days",
+            "DATA3_BOLD": "1.6%",
+            "DATA3": "positive results"
+        }
+
+    },
+
+    "KEY_DATA": {
+        "TITLE": "Key Data",
+        "SUBJECTS_LINKS": "subjects links >",
+
+        "SHARE": "Share",
+        "DOWNLOAD": "Download",
+
+        "CARD1": {
+            "TITLE": "Cases 7-days Avg.",
+            "GRAPH": {
+                
+            }
+        },
+
+        "CARD2": {
+            "TITLE": "Daily Cases",
+            "GRAPH": {
+                "FILTER_TITLE": "Period",
+                "OK": "OK",
+                "CANCEL": "Cancel"
+            }
+        }
+    },
+
+    "GENERAL_MORBIDITY_INDICATORS": {
+        "TITLE": "General Morbidity Indicators",
+        "SHARE": "Share",
+        "DOWNLOAD": "Download",
+        "CARD": {
+            "TITLE": "Hospital Beds Occupancy",
+            "INFO": "...",
+            "TABLE": {
+                "FILTER_ALL_HOSPITALS": "All Hospitals",
+                "FILTER_SELECTED": " Selcted",
+                "OK": "OK",
+                "CANCEL": "Cancel",
+                "HOSPITAL": "Hospital",
+                "OVERALL_OCCUPANCY": "% Overall Occupancy",
+                "INTERNAL_OCCUPANCY": "% Internal Ward Occupancy",
+                "NO_DATA": "No Data"
+            }
+        }
+    },
+
+    "IMPORTED_CASES": {
+        "TITLE": "Imported Cases",
+        "SHARE": "Share",
+        "DOWNLOAD": "Download",
+        "CARD": {
+            "TITLE": "Confirmed Entering Israel By Country",
+            "INFO": "...",
+            "TABLE": {
+                "FILTER_ALL_COUNTRIES": "All Countries",
+                "FILTER_SELECTED": " Selected",
+                "OK": "OK",
+                "CANCEL": "Cancel",
+                "HIGH_RISK": "High risk",
+                "MID_RISK": "Mid risk",
+                "LOW_RISK": "Low risk",
+                "COUNTRY": "Country",
+                "COLOR": "Color",
+                "ENTERING": "Entering Israel",
+                "CITIZENED": "Confirmed Citizened",
+                "FOREIGNERES": "Confirmed Foreigners",
+                "CONFIRMED_FROM_ENTERED": "% Confirmed form Enters",
+                "NO_DATA": "No Data"
+            }
+        }
+    },
+
+    "COMMUNITY_TRAFFIC_LIGHT_MODEL": {
+        "TITLE": "Community Traffic Light Model",
+        "SHARE": "Share",
+        "DOWNLOAD": "Download",
+        "CARD": {
+            "TITLE": "Traffic Light Model",
+            "INFO": "",
+            "TABLE": {
+                "FILTER_ALL_CITIES": "All Cities",
+                "FILTER_SELECTED": " Selected",
+                "OK": "OK",
+                "CANCEL": "Cancel",
+                "RED": "Red",
+                "ORANGE": "Orange",
+                "YELLOW": "Yellow",
+                "GREEN": "Green",
+                "CITY": "City",
+                "COLOR": "Color",
+                "NEW_CASES": "New Cases For Every 10000",
+                "POSITIVE": "Precentege Positive",
+                "CHANGE": "Confirmed Change",
+                "ACTIVE": "Active Cases",
+                "NO_DATA": "No Data"
+            }
+        }
+    },
+
+    "CHILD_CASES": {
+        "TITLE": "Child Cases"
+    },
+
+    "VACCINATION_EFFECTIVENESS": {
+        "TITLE": "Vaccination Effectiveness"
+    },
+
+    "DEATHS": {
+        "TITLE": "Deaths"
+    },
+
+    "TESTING": {
+        "TITLE": "Testing"
+    },
+
+    "VACCINATION": {
+        "TITLE": "Vaccination"
+    }
+}

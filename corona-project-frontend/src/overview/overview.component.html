@@ -1,0 +1,99 @@
+<div class="overview-container">
+    <div class="overview-links">
+        <div class="link-1">{{'OVERVIEW.LINK1' | translate}}></div>
+        <div class="link-2">{{'OVERVIEW.LINK2' | translate}}</div>
+    </div>
+    <div class="overview-header">
+        <div class="overview-title">{{'OVERVIEW.TITLE' | translate}}</div>
+        <div class="last-update">
+            <b>{{'OVERVIEW.UPDATE_BOLD' | translate}}</b>
+            {{'OVERVIEW.UPDATE' | translate}}
+        </div>
+    </div>
+    <div class="overview-second-title">{{'OVERVIEW.SECOND_TITLE' | translate}}</div>
+    <div class="overview-stats-group">
+
+        <app-overview-card class="card"
+        [title]="('OVERVIEW.CARD1.TITLE' | translate)"
+        [mainData]="5"
+        [dataList]="[
+            { value: '0', label: ('OVERVIEW.CARD1.DATA2' | translate)},
+            { value: '4,860,284', label: ('OVERVIEW.CARD1.DATA3' | translate)}
+        ]">
+        </app-overview-card>
+
+
+        <app-overview-card class="card"
+            [title]="'OVERVIEW.CARD2.TITLE' | translate"
+            [mainData]="383"
+            [info]="'OVERVIEW.CARD2.INFO' | translate"
+            [dataList]="[
+                { value: '171', label: 'OVERVIEW.CARD2.DATA2' | translate}
+            ]">
+        </app-overview-card>
+
+
+        <app-overview-card class="card"
+            [title]="'OVERVIEW.CARD3.TITLE' | translate"
+            [dataList]="[
+                { value: '6,725,679', label: 'OVERVIEW.CARD3.DATA1' | translate},
+                { value: '6,155,823', label: 'OVERVIEW.CARD3.DATA2' | translate},
+                { value: '4,499,899', label: 'OVERVIEW.CARD3.DATA3' | translate},
+                { value: '848,341', label: 'OVERVIEW.CARD3.DATA4' | translate},
+                { value: '407,549', label: 'OVERVIEW.CARD3.DATA5' | translate}
+            ]">
+        </app-overview-card>
+
+        <app-overview-card class="card"
+            [title]="'OVERVIEW.CARD4.TITLE' | translate"
+            [mainData]="13170"
+            [info]="'OVERVIEW.CARD4.INFO' | translate">
+        </app-overview-card>
+
+        <app-overview-card class="card"
+            [title]="'OVERVIEW.CARD5.TITLE' | translate"
+            [mainData]="'3.97%'"
+            [info]="'OVERVIEW.CARD5.INFO' | translate"
+            [dataList]="[
+            { value: '126', label: 'OVERVIEW.CARD5.DATA2' | translate},
+            { value: '140', label: 'OVERVIEW.CARD5.DATA3' | translate}
+            ]">
+        </app-overview-card>
+
+
+    </div>
+    <div class="overview-stats-group-2">
+        <div class="overview-second-title">{{'OVERVIEW.SECOND_CARDS_TITLE' | translate}}</div>
+        <div class="overview-stats-group">
+
+            <app-overview-card class="card"
+                [title]="'OVERVIEW.CARD6.TITLE' | translate"
+                [mainData]="77"
+                [dataList]="[
+                { value: '-13.5%', label: 'OVERVIEW.CARD6.DATA2' | translate}
+                ]">
+            </app-overview-card>
+
+            <app-overview-card class="card"
+                [title]="'OVERVIEW.CARD7.TITLE' | translate"
+                [mainData]="0"
+                [info]="'OVERVIEW.CARD7.INFO' | translate"
+                [dataList]="[
+                { value: '0%', label: 'OVERVIEW.CARD7.DATA2' | translate}
+                ]">
+            </app-overview-card>
+
+            <app-overview-card class="card"
+                [title]="'OVERVIEW.CARD8.TITLE' | translate"
+                [mainData]="4854"
+                [info]="'OVERVIEW.CARD8.INFO' | translate"
+                [dataList]="[
+                { value: '-11.7%', label: 'OVERVIEW.CARD8.DATA2' | translate},
+                { value: '1.6%', label: 'OVERVIEW.CARD8.DATA3' | translate}
+                ]">
+            </app-overview-card>
+        </div>
+    </div>
+</div>
+
+

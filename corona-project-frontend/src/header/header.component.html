@@ -1,0 +1,109 @@
+<div class="header-container">
+    <div class="upper-header">
+        <div class="logo-and-side-bar">
+            <div class="logo-container">
+                <div class="hamburger" (click)="toggleSideBar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="/images/header-logo.png" alt="">
+            </div>
+            <div class="side-bar-container" [class.active]="isSideBarOpen">
+                <div class="side-bar-content" [ngClass]="{'side-bar-open': isSideBarOpen, 'side-bar-closed': !isSideBarOpen}">
+                    <div class="toggle-arrow" (click)="toggleSideBar()">
+                        <div class="circle-button">
+                          <span [ngClass]="isSideBarOpen ? 'arrow-left' : 'arrow-right'"></span>
+                        </div>
+                      </div>
+                    <div *ngIf="isSideBarOpen" class="side-bar">
+                        <div class="upper-side-bar">
+                            <div class="close-button-container">
+                                <button class="close-button" (click)="toggleSideBar()">&times;</button>
+                            </div>
+                            <div class="side-bar-title bold">{{'HEADER.UPPER_HEADER.SIDE_BAR.TITLE' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM1' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM2' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM3' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM4' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM5' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM6' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM7' | translate}}</div>
+                            <div class="side-bar-item">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM8' | translate}}</div>
+                        </div>
+                        <div class="lowe-side-bar">
+                            <div class="side-bar-item bold">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM9' | translate}}</div>
+                            <div class="side-bar-item bold">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM10' | translate}}</div>
+                            <div class="side-bar-item bold">{{'HEADER.UPPER_HEADER.SIDE_BAR.ITEM11' | translate}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="title">{{ 'HEADER.UPPER_HEADER.TITLE' | translate}}</div>
+        <div class="icons-container">
+            <div class="language-icon">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" (click)="toggleTranslateOption()">
+                    <rect x="0.576176" y="0.685551" width="11.4188" height="13.933" rx="2.49676" fill="white" stroke="#374F60" stroke-width="1.15235"></rect>
+                    <path d="M10.4541 12.2462H9.37577L8.26068 9.39721H4.67033L3.56749 12.2462H2.51367L6.055 3.25195H6.93115L10.4541 12.2462ZM7.93595 8.45979L6.89438 5.68432C6.75551 5.32488 6.61663 4.89395 6.47776 4.39155C6.3879 4.7755 6.25923 5.20643 6.09176 5.68432L5.03794 8.45979H7.93595Z" fill="#374F60"></path>
+                    <rect x="9.42969" y="6.22461" width="12.5711" height="15.0853" rx="3.07294" fill="#374F60"></rect>
+                    <path d="M18.7157 9.99609V12.446C18.7157 12.7656 18.7006 13.0424 18.6705 13.2763C18.6403 13.5063 18.5779 13.7499 18.4831 14.0072C18.2893 14.5295 17.8781 14.9018 17.2493 15.1239L18.8578 17.5388H17.6498L15.6149 14.3872L14.633 13.0541C14.4607 13.1126 14.3358 13.171 14.2583 13.2295C13.8492 13.5296 13.6446 14.0325 13.6446 14.738V17.5388H12.5723V15.0889C12.5723 14.2352 12.7122 13.6018 12.9922 13.1886C13.1041 13.021 13.2592 12.865 13.4573 12.7208C13.6597 12.5727 13.9009 12.4557 14.1808 12.37L12.5787 9.99609H13.7932L15.7054 12.9138L16.7842 14.4281C17.0038 14.3112 17.1653 14.1904 17.2687 14.0656C17.3763 13.9409 17.4646 13.7713 17.5335 13.5569C17.6067 13.3425 17.6433 13.0892 17.6433 12.7968V9.99609H18.7157Z" fill="white"></path>
+                </svg>
+                <div class="language-option-container" *ngIf="isTranslateOptionOpen">
+                    <div class="hebrew" (click)="toggleTranslate($event)">{{ 'HEADER.UPPER_HEADER.LANGUAGE_HEB' | translate}}</div>
+                    <div class="english" (click)="toggleTranslate($event)">{{ 'HEADER.UPPER_HEADER.LANGUAGE_EN' | translate}}</div>
+                </div>
+            </div>
+            <div class="dark-mode-icon">
+
+                <button class="dark-mode-button" (click)="toggleDarkMode()">
+                    <svg width="40" height="40" viewBox="0 0 100 100">
+                        <!-- Sun rays (8 symmetrical lines) -->
+                        <g stroke="black" stroke-width="6" stroke="var(--dark-mode-icon-color-left)">
+                          <line x1="50" y1="10" x2="50" y2="20" />
+                          <line x1="78" y1="21" x2="72" y2="28" />
+                          <line x1="85" y1="50" x2="75" y2="50" />
+                          <line x1="79" y1="79" x2="72" y2="72" />
+                          <line x1="50" y1="90" x2="50" y2="80" />
+                          <line x1="23" y1="79" x2="30" y2="72" />
+                          <line x1="15" y1="50" x2="25" y2="50" />
+                          <line x1="23" y1="21" x2="30" y2="28" />
+                        </g>
+                      
+                        <!-- Define smaller circle path -->
+                        <defs>
+                          <!-- Circle radius 20 centered at (50, 50) -->
+                          <path id="circlePath" d="M 50 50 m -20 0 a 20 20 0 1 0 40 0 a 20 20 0 1 0 -40 0" />
+                          <clipPath id="left-half">
+                            <rect x="0" y="0" width="50" height="100" />
+                          </clipPath>
+                          <clipPath id="right-half">
+                            <rect x="50" y="0" width="50" height="100" />
+                          </clipPath>
+                        </defs>
+                      
+                        <!-- Left half (blue) -->
+                        <use href="#circlePath" fill="var(--dark-mode-icon-color-left)" clip-path="url(#left-half)" stroke="var(--dark-mode-icon-color-left)" stroke-width="4"/>
+                      
+                        <!-- Right half (red) -->
+                        <use href="#circlePath" fill="var(--dark-mode-icon-color-right)" clip-path="url(#right-half)" stroke="var(--dark-mode-icon-color-left)" stroke-width="4"/>
+                      </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="down-header">
+        <ul class="subjects">
+            <li class="list-item" (click)="navigateTo('overview')">{{'HEADER.DOWN_HEADER.SUBJECT1' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('keyData')">{{'HEADER.DOWN_HEADER.SUBJECT2' | translate}}</li>
+            <li class="list-item"(click)="navigateTo('generalMorbidityIndicators')">{{'HEADER.DOWN_HEADER.SUBJECT3' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('importedCases')">{{'HEADER.DOWN_HEADER.SUBJECT4' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('traffic')">{{'HEADER.DOWN_HEADER.SUBJECT5' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('childCases')">{{'HEADER.DOWN_HEADER.SUBJECT6' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('vaccinationEffectiveness')">{{'HEADER.DOWN_HEADER.SUBJECT7' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('deaths')">{{'HEADER.DOWN_HEADER.SUBJECT8' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('testing')">{{'HEADER.DOWN_HEADER.SUBJECT9' | translate}}</li>
+            <li class="list-item" (click)="navigateTo('vaccination')">{{'HEADER.DOWN_HEADER.SUBJECT10' | translate}}</li>
+        </ul>
+    </div>
+</div>

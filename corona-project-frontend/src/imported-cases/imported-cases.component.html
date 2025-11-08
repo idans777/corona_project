@@ -1,0 +1,136 @@
+<div class="imported-cases-container">
+    <div class="imported-cases-title">
+        {{'IMPORTED_CASES.TITLE' | translate}}
+    </div>
+    <!-- <div class="income-cases card">
+        <div class="title-and-options">
+            <div class="title">
+              {{'IMPORTED_CASES.CARD.TITLE' | translate}}
+                <div class="info">
+                    <div class="info-icon" tabindex="0">i</div>
+                    <div class="info-message-content">
+                      {{'IMPORTED_CASES.CARD.INFO' | translate}}
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+              <span (click)="toggleIsOptionOpen()" style="font-size: 20px; cursor: pointer;">&#8942;</span>
+                <div class="options-menu" *ngIf="isOptionsOpen">
+                    <div class="option-share">
+                        <i class="fas fa-share-alt share-icon"></i>
+                        <div class="share-text">{{'IMPORTED_CASES.SHARE' | translate}}</div>
+                    </div>
+                    <div class="option-download">
+                        <i class="fas fa-download download-icon"></i>
+                        <div class="download-text">{{'IMPORTED_CASES.DOWNLOAD' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        the table
+        <div class="table-container">
+            <div class="dropdown-container">
+                <button (click)="toggleDropdown()">
+                  {{ selectedCountriesNames.length === 0 ? ('IMPORTED_CASES.CARD.TABLE.FILTER_ALL_COUNTRIES' | translate) : selectedCountriesNames.length + ('IMPORTED_CASES.CARD.TABLE.FILTER_SELECTED' | translate) }} ⬇
+                </button>
+          
+                <div class="dropdown-list" *ngIf="showDropdown">
+                  <label *ngFor="let country of allCountries">
+                    <input type="checkbox"
+                           [checked]="isTempSelected(country.name)"
+                           (change)="toggleTempCountrySelection(country.name)" />
+                    {{ country.name }}
+                  </label>
+          
+                  <div class="dropdown-actions">
+                    <button (click)="confirmSelection()">{{'IMPORTED_CASES.CARD.TABLE.OK' | translate}}</button>
+                    <button (click)="cancelSelection()">{{'IMPORTED_CASES.CARD.TABLE.CANCEL' | translate}}</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="colors">
+                <div class="color-container">
+                    <div class="square red"></div>
+                    <div class="color-label">{{'IMPORTED_CASES.CARD.TABLE.HIGH_RISK' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square orange"></div>
+                    <div class="color-label">{{'IMPORTED_CASES.CARD.TABLE.MID_RISK' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square yellow"></div>
+                    <div class="color-label">{{'IMPORTED_CASES.CARD.TABLE.LOW_RISK' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square black"></div>
+                    <div class="color-label">{{'IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate}}</div>
+                </div>
+              </div>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th (click)="changeTableOrderCountry()">{{'IMPORTED_CASES.CARD.TABLE.COUNTRY' | translate}}</th>
+                    <th (click)="changeTableOrderColor()">{{'IMPORTED_CASES.CARD.TABLE.COLOR' | translate}}</th>
+                    <th (click)="changeTableOrderEnteringIsrael()">{{'IMPORTED_CASES.CARD.TABLE.ENTERING' | translate}}</th>
+                    <th (click)="changeTableOrderConfirmedCitizened()">{{'IMPORTED_CASES.CARD.TABLE.CITIZENED' | translate}}</th>
+                    <th (click)="changeTableOrderConfirmedForeigners()">{{'IMPORTED_CASES.CARD.TABLE.FOREIGNERES' | translate}}</th>
+                    <th (click)="changeTableOrderPrecentegeConfirmedEnters()">{{'IMPORTED_CASES.CARD.TABLE.CONFIRMED_FROM_ENTERED' | translate}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let country of filteredCountries">
+                    <td>{{ country.name }}</td>
+                    <td><div class="square" [ngClass]="country.color ?? 'black'"></div></td>
+                    <td>{{ country.enteringIsrael ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+                    <td>{{ country.confirmedCitizened ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+                    <td>{{ country.confirmedForeigners ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+                    <td>{{ country.precentageConfirmedFormEnters ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+                  </tr>
+                </tbody>
+              </table>
+         </div>
+    </div> -->
+
+    <app-general-table-card class="card"
+    [title]="'IMPORTED_CASES.CARD.TITLE' | translate"
+    [info]="'...'"
+    [share]="'IMPORTED_CASES.SHARE' | translate"
+    [download]="'IMPORTED_CASES.DOWNLOAD' | translate"
+    [ok]="'IMPORTED_CASES.CARD.TABLE.OK' | translate"
+    [cancel]="'IMPORTED_CASES.CARD.TABLE.CANCEL' | translate"
+    [noData]="'IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate"
+    [colors]="colors"
+    [allData]="allCountries"
+    [selectedItemsNames]="selectedCountriesNames"
+    [filteredItems]="filteredCountries"
+    [tempSelection]="tempSelection"
+    [cardNgClass]="'imported'"
+    [filterNotSelected]="'IMPORTED_CASES.CARD.TABLE.FILTER_ALL_COUNTRIES' | translate"
+    [filterSelected]="'IMPORTED_CASES.CARD.TABLE.FILTER_SELECTED' | translate"
+    >
+    <table>
+      <thead>
+        <tr>
+          <th (click)="changeTableOrderCountry()">{{'IMPORTED_CASES.CARD.TABLE.COUNTRY' | translate}}</th>
+          <th (click)="changeTableOrderColor()">{{'IMPORTED_CASES.CARD.TABLE.COLOR' | translate}}</th>
+          <th (click)="changeTableOrderEnteringIsrael()">{{'IMPORTED_CASES.CARD.TABLE.ENTERING' | translate}}</th>
+          <th (click)="changeTableOrderConfirmedCitizened()">{{'IMPORTED_CASES.CARD.TABLE.CITIZENED' | translate}}</th>
+          <th (click)="changeTableOrderConfirmedForeigners()">{{'IMPORTED_CASES.CARD.TABLE.FOREIGNERES' | translate}}</th>
+          <th (click)="changeTableOrderPrecentegeConfirmedEnters()">{{'IMPORTED_CASES.CARD.TABLE.CONFIRMED_FROM_ENTERED' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let country of filteredCountries">
+          <td>{{ country.name }}</td>
+          <td><div class="square" [ngClass]="country.color ?? 'black'"></div></td>
+          <td>{{ country.enteringIsrael ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+          <td>{{ country.confirmedCitizened ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+          <td>{{ country.confirmedForeigners ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+          <td>{{ country.precentageConfirmedFormEnters ?? ('IMPORTED_CASES.CARD.TABLE.NO_DATA' | translate) }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </app-general-table-card>
+</div>

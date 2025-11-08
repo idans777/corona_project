@@ -1,0 +1,143 @@
+<div class="community-traffic-light-model-container">
+    <div class="community-traffic-light-model-title">
+        {{'COMMUNITY_TRAFFIC_LIGHT_MODEL.TITLE' | translate}}
+    </div>
+    <!-- <div class="community-traffic-light-model card">
+        <div class="title-and-options">
+            <div class="title">
+              {{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TITLE' | translate}}
+                <div class="info">
+                    <div class="info-icon" tabindex="0">i</div>
+                    <div class="info-message-content">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+              <span (click)="toggleIsOptionOpen()" style="font-size: 20px; cursor: pointer;">&#8942;</span>
+                <div class="options-menu" *ngIf="isOptionsOpen">
+                    <div class="option-share">
+                        <i class="fas fa-share-alt share-icon"></i>
+                        <div class="share-text">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.SHARE' | translate}}</div>
+                    </div>
+                    <div class="option-download">
+                        <i class="fas fa-download download-icon"></i>
+                        <div class="download-text">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.DOWNLOAD' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <div class="dropdown-container">
+                <button (click)="toggleDropdown()">
+                  {{ selectedCitiesNames.length === 0 ? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.FILTER_ALL_CITIES' | translate) : selectedCitiesNames.length + ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.FILTER_SELECTED' | translate) }} ⬇
+                </button>
+          
+                <div class="dropdown-list" *ngIf="showDropdown">
+                  <label *ngFor="let city of allCities">
+                    <input type="checkbox"
+                           [checked]="isTempSelected(city.name)"
+                           (change)="toggleTempCitiesSelection(city.name)" />
+                    {{ city.name }}
+                  </label>
+          
+                  <div class="dropdown-actions">
+                    <button (click)="confirmSelection()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.OK' | translate}}</button>
+                    <button (click)="cancelSelection()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CANCEL' | translate}}</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="colors">
+                <div class="color-container">
+                    <div class="square red"></div>
+                    <div class="color-label">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.RED' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square orange"></div>
+                    <div class="color-label">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.ORANGE' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square yellow"></div>
+                    <div class="color-label">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.YELLOW' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square green"></div>
+                    <div class="color-label">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.GREEN' | translate}}</div>
+                </div>
+                <div class="color-container">
+                    <div class="square black"></div>
+                    <div class="color-label">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate}}</div>
+                </div>
+              </div>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th (click)="changeTableOrderCity()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CITY' | translate}}</th>
+                    <th (click)="changeTableOrderColor()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.COLOR' | translate}}</th>
+                    <th (click)="changeTableOrderNewCasesForEvery10000()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NEW_CASES' | translate}}</th>
+                    <th (click)="changeTableOrderPrecentagePositive()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.POSITIVE' | translate}}</th>
+                    <th (click)="changeTableOrderConfirmedChange()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CHANGE' | translate}}</th>
+                    <th (click)="changeTableOrderActiveCases()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.ACTIVE' | translate}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let city of filteredCities">
+                    <td>{{ city.name }}</td>
+                    <td><div class="square" [ngClass]="city.color ?? 'black'"></div></td>
+                    <td>{{ city.newCasesForEvery10000 ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                    <td>{{ city.precentagePositive ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                    <td>{{ city.confirmedChange ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                    <td>{{ city.activeCases ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+                  </tr>
+                </tbody>
+              </table>
+         </div>
+    </div> -->
+
+
+
+    <app-general-table-card class="card"
+    [title]="('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TITLE' | translate)"
+    [info]="'...'"
+    [share]="('COMMUNITY_TRAFFIC_LIGHT_MODEL.SHARE' | translate)"
+    [download]="('COMMUNITY_TRAFFIC_LIGHT_MODEL.DOWNLOAD' | translate)"
+    [ok]="('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.OK' | translate)"
+    [cancel]="('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CANCEL' | translate)"
+    [noData]="('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)"
+    [colors]="colors"
+    [allData]="allCities"
+    [selectedItemsNames]="selectedCitiesNames"
+    [filteredItems]="filteredCities"
+    [tempSelection]="tempSelection"
+    [cardNgClass]="'traffic'"
+    [filterNotSelected]="'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.FILTER_ALL_CITIES' | translate"
+    [filterSelected]="'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.SELECTED' | translate"
+    >
+    <table>
+      <thead>
+        <tr>
+          <th (click)="changeTableOrderCity()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CITY' | translate}}</th>
+          <th (click)="changeTableOrderColor()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.COLOR' | translate}}</th>
+          <th (click)="changeTableOrderNewCasesForEvery10000()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NEW_CASES' | translate}}</th>
+          <th (click)="changeTableOrderPrecentagePositive()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.POSITIVE' | translate}}</th>
+          <th (click)="changeTableOrderConfirmedChange()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.CHANGE' | translate}}</th>
+          <th (click)="changeTableOrderActiveCases()">{{'COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.ACTIVE' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let city of filteredCities">
+          <td>{{ city.name }}</td>
+          <td><div class="square" [ngClass]="city.color ?? 'black'"></div></td>
+          <td>{{ city.newCasesForEvery10000 ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+          <td>{{ city.precentagePositive ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+          <td>{{ city.confirmedChange ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+          <td>{{ city.activeCases ?? ('COMMUNITY_TRAFFIC_LIGHT_MODEL.CARD.TABLE.NO_DATA' | translate)}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </app-general-table-card>
+
+</div>
